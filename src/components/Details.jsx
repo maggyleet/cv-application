@@ -35,23 +35,26 @@ function Details() {
     });
 
     return (
-        <div className="details">
+        <>
             <h1 className="head">CV Generator</h1>
-            <div className="user-info">
-                <GenInfo genDetails={genDetails} updateGenDetails={updateGenDetails} />
-                <EduInfo eduDetails={eduDetails} updateEduDetails={updateEduDetails} />
-                <SkillInfo skillDetails={skillDetails} updateSkillDetails={updateSkillDetails} />
-                <ExpInfo expDetails={expDetails} updateExpDetails={updateExpDetails} />
+            <p className="slogan smooth-fade">Craft your resume, shape your future !</p>
+            <div className="details">
+                <div className="user-info">
+                    <GenInfo genDetails={genDetails} updateGenDetails={updateGenDetails} />
+                    <EduInfo eduDetails={eduDetails} updateEduDetails={updateEduDetails} />
+                    <SkillInfo skillDetails={skillDetails} updateSkillDetails={updateSkillDetails} />
+                    <ExpInfo expDetails={expDetails} updateExpDetails={updateExpDetails} />
+                </div>
+                <div className="preview">
+                    <Preview
+                        genDetails={genDetails}
+                        eduDetails={eduDetails}
+                        skillDetails={skillDetails}
+                        expDetails={expDetails}
+                    />
+                </div>
             </div>
-            <div className="preview">
-                <Preview
-                    genDetails={genDetails}
-                    eduDetails={eduDetails}
-                    skillDetails={skillDetails}
-                    expDetails={expDetails}
-                />
-            </div>
-        </div>
+        </>
     );
 }
 

@@ -6,7 +6,12 @@ body {
 }
 
 .head {
-    color: white;
+    color: #fffbe6;
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .details {
@@ -90,9 +95,32 @@ button:hover {
     margin: 0.2rem 0 0.8rem 0;
 }
 
+.slogan {
+    font-size: 1.4rem;
+    color: #ffe8b3;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.5s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+/* Keyframes for smooth fade + slide */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 @media (max-width: 700px) {
     .head {
         font-size: 2.5rem;
+    }
+
+    .slogan {
+        font-size: 1.3rem;
     }
 }
