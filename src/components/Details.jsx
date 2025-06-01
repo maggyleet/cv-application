@@ -36,7 +36,7 @@ function Details() {
 
     return (
         <>
-            <h1 className="head">CV Generator</h1>
+            <h1 className="head">Resume Generator</h1>
             <p className="slogan smooth-fade">Craft your resume, shape your future !</p>
             <div className="details">
                 <div className="user-info">
